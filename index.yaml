@@ -3,7 +3,41 @@ entries:
   orc8r:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-10-26T15:50:15.318445-07:00"
+    created: "2020-12-07T16:01:54.103783-08:00"
+    dependencies:
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.8
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.19
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.7
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: file://../orc8rlib
+      version: 0.1.1
+    description: A Helm chart for magma orchestrator
+    digest: 17a297f65cff14da3079fcecb3a96444fd21cb56245f158737416361bbabd6ee
+    keywords:
+    - magma
+    - or8cr
+    name: orc8r
+    sources:
+    - https://github.com/facebookincubator/magma
+    urls:
+    - orc8r-1.4.43.tgz
+    version: 1.4.43
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-12-07T16:01:54.089255-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -35,38 +69,4 @@ entries:
     urls:
     - orc8r-1.4.40.tgz
     version: 1.4.40
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: "2020-10-26T15:50:15.310868-07:00"
-    dependencies:
-    - condition: secrets.create
-      name: secrets
-      repository: ""
-      version: 0.1.7
-    - condition: metrics.enabled
-      name: metrics
-      repository: ""
-      version: 1.4.18
-    - condition: nms.enabled
-      name: nms
-      repository: ""
-      version: 0.1.7
-    - condition: logging.enabled
-      name: logging
-      repository: ""
-      version: 0.1.10
-    - name: orc8rlib
-      repository: file://../orc8rlib
-      version: 0.1.1
-    description: A Helm chart for magma orchestrator
-    digest: 1aadb93e7b95cae1f29b97f7ba6c3a859e5d22bbf5c6a0e289617976247a8fe9
-    keywords:
-    - magma
-    - or8cr
-    name: orc8r
-    sources:
-    - https://github.com/facebookincubator/magma
-    urls:
-    - orc8r-1.4.39.tgz
-    version: 1.4.39
-generated: "2020-10-26T15:50:15.301422-07:00"
+generated: "2020-12-07T16:01:54.074128-08:00"
