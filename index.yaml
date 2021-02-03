@@ -3,7 +3,7 @@ entries:
   orc8r:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-22T12:53:50.445386-08:00"
+    created: "2021-02-02T16:40:22.769886-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -37,7 +37,7 @@ entries:
     version: 1.5.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-22T12:53:50.420311-08:00"
+    created: "2021-02-02T16:40:22.759496-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -71,7 +71,7 @@ entries:
     version: 1.5.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-22T12:53:50.390715-08:00"
+    created: "2021-02-02T16:40:22.749142-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -105,7 +105,7 @@ entries:
     version: 1.4.43
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-22T12:53:50.363001-08:00"
+    created: "2021-02-02T16:40:22.739634-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -137,4 +137,35 @@ entries:
     urls:
     - orc8r-1.4.40.tgz
     version: 1.4.40
-generated: "2020-12-22T12:53:50.339866-08:00"
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-02-02T16:40:22.728103-08:00"
+    dependencies:
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.5
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.15
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.7
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    description: A Helm chart for magma orchestrator
+    digest: bcc490779bb78cca905f9beedc3c0d07e577c0270c524dbbe47e46f3de4774a2
+    keywords:
+    - magma
+    - or8cr
+    name: orc8r
+    sources:
+    - https://github.com/facebookincubator/magma
+    urls:
+    - orc8r-1.4.36.tgz
+    version: 1.4.36
+generated: "2021-02-02T16:40:22.721917-08:00"
