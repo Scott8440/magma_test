@@ -1,9 +1,63 @@
 apiVersion: v1
 entries:
+  lte-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-03T13:57:47.192539-08:00"
+    dependencies:
+    - name: orc8rlib
+      repository: file://../../../../orc8r/cloud/helm/orc8rlib
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's lte module
+    digest: f7f531abc86fde409dc320b3b3f7fa2affe35cecb8d4e9dbcb88251d8fd06e26
+    keywords:
+    - magma
+    - or8cr
+    - lte-orc8r
+    name: lte-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - lte-orc8r-0.2.1.tgz
+    version: 0.2.1
   orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-03T13:57:47.228969-08:00"
+    dependencies:
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.10
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.21
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.7
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: file://../orc8rlib
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator
+    digest: bacfbf8199bea2b981e16ba1115572385d4384c30ac1f52b8fcba7dbc06c562f
+    keywords:
+    - magma
+    - or8cr
+    name: orc8r
+    sources:
+    - https://github.com/facebookincubator/magma
+    urls:
+    - orc8r-1.5.11.tgz
+    version: 1.5.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T16:44:30.75329-08:00"
+    created: "2021-02-03T13:57:47.245972-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -37,7 +91,7 @@ entries:
     version: 1.5.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T16:44:30.742838-08:00"
+    created: "2021-02-03T13:57:47.237047-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -71,7 +125,7 @@ entries:
     version: 1.5.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T16:44:30.72769-08:00"
+    created: "2021-02-03T13:57:47.215242-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -105,7 +159,7 @@ entries:
     version: 1.4.43
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T16:44:30.710509-08:00"
+    created: "2021-02-03T13:57:47.207633-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -139,7 +193,7 @@ entries:
     version: 1.4.40
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T16:44:30.692683-08:00"
+    created: "2021-02-03T13:57:47.198282-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -168,4 +222,4 @@ entries:
     urls:
     - orc8r-1.4.36.tgz
     version: 1.4.36
-generated: "2021-02-02T16:44:30.679919-08:00"
+generated: "2021-02-03T13:57:47.191095-08:00"
