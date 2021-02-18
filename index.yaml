@@ -3,7 +3,7 @@ entries:
   lte-orc8r:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.35119-08:00"
+    created: "2021-02-18T12:11:01.217004-08:00"
     dependencies:
     - name: orc8rlib
       repository: file://../../../../orc8r/cloud/helm/orc8rlib
@@ -23,7 +23,7 @@ entries:
   orc8r:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.444113-08:00"
+    created: "2021-02-18T12:11:01.342148-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -57,7 +57,7 @@ entries:
     version: 1.5.16
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.435319-08:00"
+    created: "2021-02-18T12:11:01.32876-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -91,12 +91,12 @@ entries:
     version: 1.5.15
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.425536-08:00"
+    created: "2021-02-18T12:11:01.314267-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
       repository: ""
-      version: 0.1.11
+      version: 0.1.10
     - condition: metrics.enabled
       name: metrics
       repository: ""
@@ -104,7 +104,7 @@ entries:
     - condition: nms.enabled
       name: nms
       repository: ""
-      version: 0.1.7
+      version: 0.1.8
     - condition: logging.enabled
       name: logging
       repository: ""
@@ -113,19 +113,19 @@ entries:
       repository: file://../orc8rlib
       version: 0.1.2
     description: A Helm chart for magma orchestrator
-    digest: 03399f4eca961c64bcc5b323b2d5579f9ee5b4ad926bfbd1396b0f43362be147
+    digest: c4349c07369d65089c6309d89e32898fe9d11df6a82b81993de5240a078861e1
     keywords:
     - magma
     - or8cr
     name: orc8r
     sources:
-    - https://github.com/facebookincubator/magma
+    - https://github.com/magma/magma
     urls:
     - orc8r-1.5.14.tgz
     version: 1.5.14
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.415761-08:00"
+    created: "2021-02-18T12:11:01.299249-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -159,7 +159,7 @@ entries:
     version: 1.5.13
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.405138-08:00"
+    created: "2021-02-18T12:11:01.284697-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -193,7 +193,7 @@ entries:
     version: 1.5.12
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.395661-08:00"
+    created: "2021-02-18T12:11:01.272612-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -227,7 +227,7 @@ entries:
     version: 1.5.11
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.462-08:00"
+    created: "2021-02-18T12:11:01.372588-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -261,7 +261,7 @@ entries:
     version: 1.5.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.453571-08:00"
+    created: "2021-02-18T12:11:01.35668-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -295,7 +295,7 @@ entries:
     version: 1.5.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.380496-08:00"
+    created: "2021-02-18T12:11:01.252951-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -329,7 +329,7 @@ entries:
     version: 1.4.43
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.367955-08:00"
+    created: "2021-02-18T12:11:01.239942-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -363,7 +363,7 @@ entries:
     version: 1.4.40
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-17T15:56:23.357271-08:00"
+    created: "2021-02-18T12:11:01.226066-08:00"
     dependencies:
     - condition: secrets.create
       name: secrets
@@ -392,4 +392,4 @@ entries:
     urls:
     - orc8r-1.4.36.tgz
     version: 1.4.36
-generated: "2021-02-17T15:56:23.348113-08:00"
+generated: "2021-02-18T12:11:01.214153-08:00"
